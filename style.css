@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+* ::selection {
+    color: white;
+    background-color: black;
+}
+
+/*
+.newspaper {
+    padding: 0.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+}
+*/
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+
+.page1 {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 1vw;
+    padding-top: 20vh;
+}
+
+.page1 h1 {
+    font-size: 15.8vw;
+    font-family: "Futura Now Headline", "Lucida Sans", Tahoma, sans-serif;
+    line-height: 14vw;
+    letter-spacing: -8px;
+    text-transform: uppercase;
+}
+
+
+#video-container {
+    height: 100vh;
+    width: 100%;
+    margin-top: 3vw;
+}
+
+#videoButton {
+    text-decoration: none;
+    color: #f7f7f7;
+    font-family: "Futura Now Headline", "Lucida Sans", Tahoma, sans-serif;
+}
+
+
+#video-container video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#PLAY {
+    background-color: aliceblue;
+    color: #333;
+}
+
+
+#video-container #play {
+    padding: 3vw 2.2vw;
+    background-color: black;
+    color: #ffff;
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    font-family: "Futura Now Headline", "Lucida Sans", Tahoma, sans-serif;
+    position: fixed;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+/*  PAGE - 2 */
+#page2 {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 1vw;
+}
+
+
+#page2 .elem {
+    height: 100%;
+    width: 31%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#page2 .elem img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.2;
+}
+
+#page2 .elem .dets {
+    height: 60px;
+    width: 70%;
+    background-color: rgb(254, 213, 255);
+    position: absolute;
+    z-index: 9;
+    border-radius: 50px;
+    overflow: hidden;
+
+}
+
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*
+#page2 .elem .dets:hover {
+
+
+}
+*/
+
+/* PAGE - 3 */
+
+#page3 {
+    min-height: 120vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.child {
+    height: 54vh;
+    width: 38vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.child img {
+    height: 100%;
+}
+
+#nav {
+    height: 100px;
+    width: 100%;
+
+    position: fixed;
+    z-index: 99;
+    padding: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+
+#nav-part1 {
+    height: 67px;
+    overflow: hidden;
+}
+
+
+#nav-part1 svg {
+    display: block;
+
+}
+
+#nav-part1 #twogood {
+    height: 67px;
+
+}
+
+#nav-part1 #twogoodlogo {
+    height: 40px;
+
+}
+
+#nav #navPart2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#navPart2 #links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 20px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+#icons {
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-radius: 50px;
+}
+
+
+#navPart2 #icons i {
+    font-size: 18px;
+    margin: 0 20px;
+    font-weight: 100;
+}
+
+#cursor {
+    height: 180px;
+    width: 180px;
+    background-color: rgb(195, 228, 233);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    position: fixed;
+}
+
+
+@media (max-width: 600px) {
+
+
+    #nav {
+        height: 100px;
+        width: 100%;
+        /*  background-color: rgb(155, 184, 235);  */
+        position: fixed;
+        z-index: 99;
+        padding: 15px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+    }
+
+
+    #nav #nav-part1 {
+        height: 67px;
+        width: auto;
+        margin-top: -10px;
+        overflow: hidden;
+    }
+
+    #nav-part1 #twogoodlogo {
+        height: 40px;
+        margin-left: -20px;
+    }
+
+
+    #nav-part1 svg {
+        display: block;
+        width: 90px;
+        flex-shrink: 0;
+
+    }
+
+    #nav #navPart2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    #navPart2 #links a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        font-size: 14px;
+        margin: 20px;
+        text-transform: uppercase;
+        font-family: sans-serif;
+    }
+
+    #links {
+        display: none;
+    }
+
+
+    #icons {
+        padding: 10px;
+        background-color: #f7f7f7;
+        border-radius: 50px;
+    }
+
+
+    #navPart2 #icons i {
+        font-size: 18px;
+        margin: 0 20px;
+        font-weight: 100;
+    }
+
+
+    .page1 {
+        min-height: 70vh;
+        width: 100%;
+        padding: 0 3vw;
+        padding-top: 25vh;
+    }
+
+    .page1 h1 {
+        font-size: 15.5vw;
+        letter-spacing: -3px;
+        line-height: 12vw;
+    }
+
+    #video-container {
+        height: 25vh;
+        margin-top: 3vw;
+        object-fit: cover;
+    }
+
+    #video-container video {
+        height: 100%;
+        width: 90vw;
+
+    }
+
+
+    #video-container #play {
+        padding: 9.5vw 7.2vw;
+        font-size: 4.5vw;
+        position: absolute;
+        opacity: 1;
+        scale: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+
+    .animatebtn{
+        background-color: aliceblue;
+        color: black;
+
+    }
+
+
+    /* PAGE - 2 */
+
+    #page2 {
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5vw 3vw;
+    }
+
+
+    #page2 .elem {
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 3vw;
+    }
+
+
+    /* PAGE - 3 */
+
+    #page3 {
+        min-height: 120vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .child {
+        height: 54vh;
+        width: 88vw;
+        position: relative;
+        padding: 15vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .child img {
+        height: 100%;
+    }
+
+    #nav {
+        height: 100px;
+        width: 100%;
+        position: fixed;
+        z-index: 99;
+        padding: 25px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+
+    #nav-part1 {
+        height: 82px;
+        overflow: hidden;
+    }
+
+
+    #nav-part1 svg {
+        display: block;
+    }
+
+    #nav #navPart2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    #navPart2 #links a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        font-size: 14px;
+        margin: 20px;
+        text-transform: uppercase;
+        font-family: sans-serif;
+    }
+
+    #icons {
+        padding: 10px;
+        background-color: #f7f7f7;
+        border-radius: 50px;
+    }
+
+
+    #navPart2 #icons i {
+        font-size: 18px;
+        margin: 0 20px;
+        font-weight: 100;
+    }
+
+    #cursor {
+        height: 180px;
+        width: 180px;
+        background-color: rgb(195, 228, 233);
+        border-radius: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        position: fixed;
+    }
+
+
+
+}
